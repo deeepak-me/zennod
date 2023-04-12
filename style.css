@@ -15,6 +15,7 @@ body{
     overflow-x: hidden;
     color: #FFFFFF;
     font-size: 16px;
+    height: 100vh;
 }
 section {
     padding: 2rem 7%;
@@ -22,42 +23,32 @@ section {
 .container{
     width: 100%;
     margin:  0 auto;
-    /* position: relative; */
+}
+
+.hero{
+    width: 100%;
+    background: #702DFF;
+    position: fixed;
+    z-index: 100;
 }
 
 nav{
-    width: 100%;
-    background: #702DFF;
-    padding: 0.7rem 0;
-    position: fixed;
-    top: 0;
-    z-index: 105;
-}
-
-nav .container{
-    width: 80%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
-}
-
-nav .container .log{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 36px;
-
-    color: #FEFEFE;
-}
-
-nav .container .nav-items{
-    display: flex;
     justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 14px; 
 }
 
-nav .container a {
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+nav ul li a{
     margin: 0 1rem;
     text-decoration: none;
     font-style: normal;
@@ -65,44 +56,34 @@ nav .container a {
     font-size: 16px;
     line-height: 142%;
     color: #FFFFFF;
-
-
 }
 
-nav .container .hot{
+nav .log{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+    color: #FEFEFE;
+    cursor: pointer;
+}
+
+nav .hot{
     border-radius: 12px;
     width: 31px;
-    height: 10px;
+    height: 14px;
     background: #DA310C;
-    border-radius: 12px;
-    margin-left: 5px;
-
-}
-
-nav .container .hot{
-    font-style: normal;
+    margin-left: -12px;
     font-weight: 500;
     font-size: 10px;
     line-height: 142%;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-nav .container .nav-items h3{
-    margin-left: 34px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-main .container{
-    margin-top: 98px;
 }
 
 main .top{
     background: #702DFF;
     text-align: center;
     min-height: 100vh;
+    padding-top: 102px;
 }
 
 main .container .top .first{
@@ -110,7 +91,7 @@ main .container .top .first{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    height: 31px;
+    margin-top: 50px;
 }
 
 .first img{
@@ -178,21 +159,21 @@ main .container .top .btn .btn-content img{
 
 main .top .vector1{
     position: absolute;
-    left: 42.6%;
-    /* right: -5.21%; */
-    top: 5.56%;
-    /* bottom: 56.75%; */
     opacity: 0.56;
+    width:1202.01px;
+    height:901.94px;
+    top: 180px;
+    left: 318px;
+
 }
 
 main .top .vector2{
     position: absolute;
     width: 63.62px;
     height: 37.41px;
-    left: 1100px;
-    top: 270px;
-
-    transform: rotate(32.5deg);
+    left: 1216px;
+    top: 423px;
+    transform: rotate(4.5deg);
 }
 
 main .top .vector3{
@@ -216,15 +197,15 @@ main .top .vector7{
     width: 25px;
     height: 25px;
     left: -84px;
-    top: 745px;
+    top: 773px;
 }
 
 main .top .vector8{
     position: absolute;
     width: 49px;
     height: 7.46px;
-    left: 295px;
-    top: 885px;
+    left: 264px;
+    top: 789px;
 }
 
 main .top .vector9{
@@ -397,6 +378,7 @@ main .container .center img{
     border-radius: 47px;
     padding: 10px;
     margin: 21px 0;
+    cursor: pointer;
 }
 
 .footer .btn-section .btn-2{
