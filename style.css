@@ -15,10 +15,13 @@ body{
     overflow-x: hidden;
     color: #FFFFFF;
 }
-
+section {
+    padding: 2rem 7%;
+}
 .container{
     width: 100%;
     margin:  0 auto;
+    /* position: relative; */
 }
 
 nav{
@@ -27,7 +30,7 @@ nav{
     padding: 0.7rem 0;
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 105;
 }
 
 nav .container{
@@ -42,6 +45,35 @@ nav .container .nav-items{
     justify-content: space-between;
 }
 
+nav .container a {
+    margin: 0 1rem;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .container div{
+    display: flex;
+    align-items: center;
+}
+
+nav .container .hot{
+    width: 40px;
+    height: 18px;
+    background: #DA310C;
+    border-radius: 12px;
+    display: flex;
+}
+
+nav .container .hot h4{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 142%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
 nav .container .nav-items h3{
     margin-left: 34px;
     font-style: normal;
@@ -51,15 +83,19 @@ nav .container .nav-items h3{
 
 main{
     display: flex;
-    position: relative;
+    /* position: relative; */
     top: 66px;
 }
 
+main .container{
+    margin-top: 26px;
+}
+
 main .top{
-    /* flex: 1; */
     background: #702DFF;
     text-align: center;
     min-height: 100vh;
+    position: relative;
 }
 
 main .container .top .first{
@@ -67,20 +103,20 @@ main .container .top .first{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 main .container .top .first h2{
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 main .container .top .second{
     font-style: normal;
     font-weight: 800;
-    font-size: 38px;
-    line-height: 76px;
+    font-size: 34px;
+    line-height: 70px;
 }
 
 main .container .top .second span{
@@ -90,23 +126,248 @@ main .container .top .second span{
 main .container .top .third{
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     color: #E3DAF9;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
 
 
 main .container .top .btn{
-    /* display: inline-block; */
+    /* display: flex;
+    align-content: center; */
+    display: inline-block;
     background: #FFFFFF;
     color: #702DFF;
-    padding:12px 32px ;
+    padding:10px 28px ;
     font-weight: 500;
     border-radius: 15px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 179px;
     height: 62px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 188%;
 }
 
+main .top .vector1{
+    position: absolute;
+    left: 42.6%;
+    right: -5.21%;
+    top: 5.56%;
+    bottom: 56.75%;
+    opacity: 0.56;
+}
+
+main .top .vector2{
+    position: absolute;
+    width: 63.62px;
+    height: 37.41px;
+    left: 1100px;
+    top: 270px;
+
+    transform: rotate(32.5deg);
+}
+
+main .container .center{
+    position: absolute;
+    left: 314px;
+    top: 376px;
+    z-index: 10;
+    /* display: none; */
+}
+
+main .container .center img{
+    width: 560px;
+    height: 380px;
+    box-shadow: 0 0 2rem hsl(#000000, 75% 60% 25%);
+}
+
+
+.bottom{
+    background: #EFEFEF;
+    color: #000000;
+    min-height: 125vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.bottom .cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    position: absolute;
+    top: 200px;
+}
+
+.bottom .cards .card{
+    width: 303px;
+    /* height: auto; */
+    height: 541px;
+    background: #FFFFFF;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.bottom .cards .card img{
+    width:40px;
+    aspect-ratio: 1/1;
+    margin-bottom: 10px;
+}
+
+.bottom .cards .card h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 142%;
+    margin-bottom: 10px;
+}
+
+.bottom .cards .card h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 142%;
+    color: #6F6F6F;
+    margin-bottom: 10px;
+}
+
+
+.bottom .cards .card-section{
+    border-bottom: 2px dotted #D3D3D3;
+    margin-bottom: 10px;
+}
+
+.bottom .cards .card-2{
+    background: none;
+    border: 2px dotted #D3D3D3;;
+}
+.bottom .cards .card-2 h2{
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 142%;
+    margin-bottom: 26px;
+}
+
+.bottom .cards .card-2 h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 188%;
+    text-align: center;
+    color: #6F6F6F;
+}
+
+.bottom .cards .card-2 .card-section{
+    border-bottom: none;
+}
+
+.bottom .cards .vector3{
+    position: absolute;
+    left: 54.4%;
+    right: 10.42%;
+    top: 80.78%;
+    bottom: 40%;
+
+    background: #F4C01E;
+    transform: rotate(0.5deg)
+}
+
+.bottom .cards .vector4{
+    position: absolute;
+    left: 45%;
+    right: 59.55%;
+    top: 20%;
+    bottom: 40.8%;
+
+    background: #F4C01E;
+    transform: rotate(-76.13deg);
+}
+
+
+.footer{
+    color: #000000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .btn-section{
+    display: flex;
+    background: #0C0B11;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    width: 238px;
+    height: 64px;
+    border-radius: 47px;
+    gap: 2rem;
+    padding: 10px;
+    margin: 21px 0;
+}
+
+.footer h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 188%;
+    text-align: center;
+    color: #828282;
+}
+
+.footer h4{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 142.5%;
+    color: #000000;
+    margin: 30px 0;
+}
+
+.footer .domains{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .domain-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 22px;
+}
+
+.footer .domain-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 22px;
+}
+
+.footer .privacy{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 142.5%;
+    color: #828282;
+}
