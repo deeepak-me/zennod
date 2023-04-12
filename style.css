@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@600&display=swap');
 
 *,*::after,*::before{
     margin: 0;
@@ -14,6 +14,7 @@ body{
     font-family: 'Open Sans';
     overflow-x: hidden;
     color: #FFFFFF;
+    font-size: 16px;
 }
 section {
     padding: 2rem 7%;
@@ -38,6 +39,17 @@ nav .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
+}
+
+nav .container .log{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #FEFEFE;
 }
 
 nav .container .nav-items{
@@ -47,25 +59,27 @@ nav .container .nav-items{
 
 nav .container a {
     margin: 0 1rem;
-    font-size: 16px;
-    color: #fff;
     text-decoration: none;
-}
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 142%;
+    color: #FFFFFF;
 
-nav .container div{
-    display: flex;
-    align-items: center;
+
 }
 
 nav .container .hot{
-    width: 40px;
-    height: 18px;
+    border-radius: 12px;
+    width: 31px;
+    height: 10px;
     background: #DA310C;
     border-radius: 12px;
-    display: flex;
+    margin-left: 5px;
+
 }
 
-nav .container .hot h4{
+nav .container .hot{
     font-style: normal;
     font-weight: 500;
     font-size: 10px;
@@ -81,21 +95,14 @@ nav .container .nav-items h3{
     font-size: 16px;
 }
 
-main{
-    display: flex;
-    /* position: relative; */
-    top: 66px;
-}
-
 main .container{
-    margin-top: 26px;
+    margin-top: 98px;
 }
 
 main .top{
     background: #702DFF;
     text-align: center;
     min-height: 100vh;
-    position: relative;
 }
 
 main .container .top .first{
@@ -103,20 +110,26 @@ main .container .top .first{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding-top: 2rem;
+    height: 31px;
+}
+
+.first img{
+    width: 19.3px;
+    height: 21.99px;
 }
 
 main .container .top .first h2{
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
+    line-height: 142.5%;
 }
-
-main .container .top .second{
+main .container .top .second h2{
     font-style: normal;
     font-weight: 800;
-    font-size: 34px;
+    font-size: 53px;
     line-height: 70px;
+    text-align: center;
 }
 
 main .container .top .second span{
@@ -126,38 +139,49 @@ main .container .top .second span{
 main .container .top .third{
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 30px;
     color: #E3DAF9;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
+    margin-top: 14px;
 }
 
-
 main .container .top .btn{
-    /* display: flex;
-    align-content: center; */
     display: inline-block;
     background: #FFFFFF;
     color: #702DFF;
-    padding:10px 28px ;
+    padding:12px 33px ;
     font-weight: 500;
     border-radius: 15px;
     cursor: pointer;
-    font-size: 0.8rem;
     width: 179px;
     height: 62px;
+}
+
+main .container .top .btn .btn-content{
+    width: 114px;
+    height: 38px;
+    display: flex;
+    align-items: center;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 188%;
 }
 
+main .container .top .btn .btn-content img{
+    width:15px;
+    height:20px;
+    margin-right: 10px;
+}
+
+
 main .top .vector1{
     position: absolute;
     left: 42.6%;
-    right: -5.21%;
+    /* right: -5.21%; */
     top: 5.56%;
-    bottom: 56.75%;
+    /* bottom: 56.75%; */
     opacity: 0.56;
 }
 
@@ -171,29 +195,67 @@ main .top .vector2{
     transform: rotate(32.5deg);
 }
 
-main .container .center{
+main .top .vector3{
     position: absolute;
-    left: 314px;
-    top: 376px;
+    width: 24px;
+    height: 24px;
+    left: 295px;
+    top: 510px;
+}
+
+main .top .vector4{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1070px;
+    top: 885px;
+}
+
+main .top .vector7{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -84px;
+    top: 745px;
+}
+
+main .top .vector8{
+    position: absolute;
+    width: 49px;
+    height: 7.46px;
+    left: 295px;
+    top: 885px;
+}
+
+main .top .vector9{
+    position: absolute;
+    width: 49px;
+    height: 7.46px;
+    left: 1055px;
+    top: 630px;
+}
+
+main .container .center{
+    position: relative;
+    top: 50px;
     z-index: 10;
-    /* display: none; */
+    border-radius: 6px;
 }
 
 main .container .center img{
-    width: 560px;
-    height: 380px;
-    box-shadow: 0 0 2rem hsl(#000000, 75% 60% 25%);
+    width: 702px;
+    height: 491px;
+    box-shadow: 0 8px 25px -6px black;
 }
 
 
 .bottom{
     background: #EFEFEF;
     color: #000000;
-    min-height: 125vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     
 }
 
@@ -201,28 +263,31 @@ main .container .center img{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem;
-    position: absolute;
-    top: 200px;
+    gap: 29px;
+    margin-top: 81px;
 }
 
 .bottom .cards .card{
-    width: 303px;
-    /* height: auto; */
-    height: 541px;
+    width: 381px;
+    height: 542px;
     background: #FFFFFF;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1.5rem;
+    padding: 14px;
 }
 
-.bottom .cards .card img{
+.bottom .cards .card-section .img{
     width:40px;
+    height: 40px;
     aspect-ratio: 1/1;
     margin-bottom: 10px;
+    /* margin-top: 32px; */
+    margin-left: 42px;
 }
+
+
 
 .bottom .cards .card h2{
     font-style: normal;
@@ -243,13 +308,22 @@ main .container .center img{
 
 
 .bottom .cards .card-section{
-    border-bottom: 2px dotted #D3D3D3;
+    border-bottom: 2px dashed #D3D3D3;
     margin-bottom: 10px;
+}
+
+.bottom .cards .card-section:nth-child(3){
+    border-bottom: none;
+}
+
+
+.bottom .cards .card-section .card-text{
+    margin-left: 36px;
 }
 
 .bottom .cards .card-2{
     background: none;
-    border: 2px dotted #D3D3D3;;
+    border: 2px dashed #D3D3D3;;
 }
 .bottom .cards .card-2 h2{
     text-align: center;
@@ -273,22 +347,22 @@ main .container .center img{
     border-bottom: none;
 }
 
-.bottom .cards .vector3{
+.bottom .cards .vector5{
     position: absolute;
-    left: 54.4%;
-    right: 10.42%;
-    top: 80.78%;
-    bottom: 40%;
+    /* position: relative; */
+    left: 37.6%;
+    right: 59.55%;
+    top: 160px;
+    bottom: 40.8%;
 
     background: #F4C01E;
-    transform: rotate(0.5deg)
+    transform: rotate(-76.13deg);
 }
 
-.bottom .cards .vector4{
-    position: absolute;
+.bottom .cards .vector6{
     left: 45%;
     right: 59.55%;
-    top: 20%;
+    top: 137px;
     bottom: 40.8%;
 
     background: #F4C01E;
@@ -309,6 +383,7 @@ main .container .center img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .footer .btn-section{
@@ -317,12 +392,26 @@ main .container .center img{
     color: #FFFFFF;
     align-items: center;
     justify-content: center;
-    width: 238px;
+    width: 242px;
     height: 64px;
     border-radius: 47px;
-    gap: 2rem;
     padding: 10px;
     margin: 21px 0;
+}
+
+.footer .btn-section .btn-2{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 142.5%;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.footer .btn-section img{
+    height: 40px;
+    width: 40px;
 }
 
 .footer h3{
@@ -352,16 +441,15 @@ main .container .center img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 22px;
+    gap: 50px;
+    margin-bottom: 30px;
 }
 
 .footer .domain-2{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 22px;
+    gap: 50px;
 }
 
 .footer .privacy{
@@ -370,4 +458,14 @@ main .container .center img{
     font-size: 14px;
     line-height: 142.5%;
     color: #828282;
+    margin-top: 61px;
+    margin-bottom: 40px;
+}
+
+.layer{
+    position: relative;
+    width: 535.65px;
+    height: 393.22px;
+    left: -390px;
+    top: -25px;
 }
