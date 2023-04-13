@@ -25,6 +25,7 @@ section {
     margin:  0 auto;
 }
 
+/* Navbar Start */
 .hero{
     width: 100%;
     background: #702DFF;
@@ -78,7 +79,10 @@ nav .hot{
     font-size: 10px;
     line-height: 142%;
 }
+/* Navbar End */
 
+
+/* Home section Start */
 main .top{
     background: #702DFF;
     text-align: center;
@@ -86,7 +90,7 @@ main .top{
     padding-top: 102px;
 }
 
-main .container .top .first{
+.top .first{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,13 +103,13 @@ main .container .top .first{
     height: 21.99px;
 }
 
-main .container .top .first h2{
+.top .first h2{
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 142.5%;
 }
-main .container .top .second h2{
+.top .second h2{
     font-style: normal;
     font-weight: 800;
     font-size: 53px;
@@ -113,11 +117,11 @@ main .container .top .second h2{
     text-align: center;
 }
 
-main .container .top .second span{
+.top .second span{
     color: #F4C01E;
 }
 
-main .container .top .third{
+.top .third{
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -127,7 +131,7 @@ main .container .top .third{
     margin-top: 14px;
 }
 
-main .container .top .btn{
+.top .btn{
     display: inline-block;
     background: #FFFFFF;
     color: #702DFF;
@@ -139,7 +143,7 @@ main .container .top .btn{
     height: 62px;
 }
 
-main .container .top .btn .btn-content{
+.top .btn-content{
     width: 114px;
     height: 38px;
     display: flex;
@@ -150,14 +154,14 @@ main .container .top .btn .btn-content{
     line-height: 188%;
 }
 
-main .container .top .btn .btn-content img{
+.top .btn-content img{
     width:15px;
     height:20px;
     margin-right: 10px;
 }
 
 
-main .top .vector1{
+.top .vector1{
     position: absolute;
     opacity: 0.56;
     width:1202.01px;
@@ -167,7 +171,7 @@ main .top .vector1{
 
 }
 
-main .top .vector2{
+.top .vector2{
     position: absolute;
     width: 63.62px;
     height: 37.41px;
@@ -176,7 +180,7 @@ main .top .vector2{
     transform: rotate(4.5deg);
 }
 
-main .top .vector3{
+.top .vector3{
     position: absolute;
     width: 24px;
     height: 24px;
@@ -184,7 +188,7 @@ main .top .vector3{
     top: 510px;
 }
 
-main .top .vector4{
+.top .vector4{
     position: absolute;
     width: 25px;
     height: 25px;
@@ -192,7 +196,7 @@ main .top .vector4{
     top: 885px;
 }
 
-main .top .vector7{
+.top .vector7{
     position: absolute;
     width: 25px;
     height: 25px;
@@ -200,7 +204,7 @@ main .top .vector7{
     top: 773px;
 }
 
-main .top .vector8{
+.top .vector8{
     position: absolute;
     width: 49px;
     height: 7.46px;
@@ -208,7 +212,7 @@ main .top .vector8{
     top: 789px;
 }
 
-main .top .vector9{
+.top .vector9{
     position: absolute;
     width: 49px;
     height: 7.46px;
@@ -216,20 +220,22 @@ main .top .vector9{
     top: 630px;
 }
 
-main .container .center{
+.top .center{
     position: relative;
     top: 50px;
     z-index: 10;
     border-radius: 6px;
 }
 
-main .container .center img{
+.top .center img{
     width: 702px;
     height: 491px;
     box-shadow: 0 8px 25px -6px black;
 }
+/* home section end */
 
 
+/* Bottom Section Starts */
 .bottom{
     background: #EFEFEF;
     color: #000000;
@@ -237,7 +243,6 @@ main .container .center img{
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .bottom .cards{
@@ -248,7 +253,7 @@ main .container .center img{
     margin-top: 81px;
 }
 
-.bottom .cards .card{
+.cards .card{
     width: 381px;
     height: 542px;
     background: #FFFFFF;
@@ -259,18 +264,7 @@ main .container .center img{
     padding: 14px;
 }
 
-.bottom .cards .card-section .img{
-    width:40px;
-    height: 40px;
-    aspect-ratio: 1/1;
-    margin-bottom: 10px;
-    /* margin-top: 32px; */
-    margin-left: 42px;
-}
-
-
-
-.bottom .cards .card h2{
+.cards .card h2{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -278,7 +272,7 @@ main .container .center img{
     margin-bottom: 10px;
 }
 
-.bottom .cards .card h3{
+.cards .card h3{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -287,26 +281,36 @@ main .container .center img{
     margin-bottom: 10px;
 }
 
-
-.bottom .cards .card-section{
+.card .card-section{
     border-bottom: 2px dashed #D3D3D3;
     margin-bottom: 10px;
 }
 
-.bottom .cards .card-section:nth-child(3){
+.card .card-section .img{
+    width:40px;
+    height: 40px;
+    aspect-ratio: 1/1;
+    margin-bottom: 10px;
+    margin-left: 42px;
+}
+
+.card .card-section:nth-child(3){
     border-bottom: none;
 }
 
-
-.bottom .cards .card-section .card-text{
+.card-section .card-text{
     margin-left: 36px;
 }
 
-.bottom .cards .card-2{
-    background: none;
-    border: 2px dashed #D3D3D3;;
+.cards .vector-card{
+    position: relative;
 }
-.bottom .cards .card-2 h2{
+
+.vector-card .card-2{
+    background: none;
+    border: 2px dashed #D3D3D3;
+}
+.vector-card .card-2 h2{
     text-align: center;
     font-style: normal;
     font-weight: 800;
@@ -315,7 +319,7 @@ main .container .center img{
     margin-bottom: 26px;
 }
 
-.bottom .cards .card-2 h3{
+.vector-card .card-2 h3{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -324,33 +328,31 @@ main .container .center img{
     color: #6F6F6F;
 }
 
-.bottom .cards .card-2 .card-section{
+.card-2 .card-section{
     border-bottom: none;
 }
 
-.bottom .cards .vector5{
+.card-section .card-text-2{
+    margin-left: 0;
+}
+
+.vector-card .vector5{
     position: absolute;
-    /* position: relative; */
-    left: 37.6%;
-    right: 59.55%;
-    top: 160px;
-    bottom: 40.8%;
-
-    background: #F4C01E;
-    transform: rotate(-76.13deg);
+    left: -37.6px;
+    top: 70px;
+    transform: rotate(-5deg);
 }
 
-.bottom .cards .vector6{
-    left: 45%;
-    right: 59.55%;
-    top: 137px;
-    bottom: 40.8%;
-
-    background: #F4C01E;
-    transform: rotate(-76.13deg);
+.vector-card .vector6{
+    left: 255px;
+    top: 435px;
+    position: absolute;
+    transform: rotate(-3deg);
 }
 
+/* Bottom Section ends */
 
+/* Footer Section Start */
 .footer{
     color: #000000;
     text-align: center;
@@ -367,7 +369,7 @@ main .container .center img{
     margin-top: 50px;
 }
 
-.footer .btn-section{
+.contents .btn-section{
     display: flex;
     background: #0C0B11;
     color: #FFFFFF;
@@ -377,11 +379,11 @@ main .container .center img{
     height: 64px;
     border-radius: 47px;
     padding: 10px;
-    margin: 21px 0;
+    margin-bottom: 21px;
     cursor: pointer;
 }
 
-.footer .btn-section .btn-2{
+.btn-section .btn-2{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -391,7 +393,7 @@ main .container .center img{
     margin-right: 10px;
 }
 
-.footer .btn-section img{
+.contents .btn-section img{
     height: 40px;
     width: 40px;
 }
@@ -414,12 +416,12 @@ main .container .center img{
     margin: 30px 0;
 }
 
-.footer .domains{
+.contents .domains{
     display: flex;
     flex-direction: column;
 }
 
-.footer .domain-1{
+.domains .domain-1{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -427,21 +429,21 @@ main .container .center img{
     margin-bottom: 30px;
 }
 
-.footer .domain-2{
+.domains.domain-2{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
 
-.footer .privacy{
+.contents .privacy{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 142.5%;
     color: #828282;
     margin-top: 61px;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
 .layer{
