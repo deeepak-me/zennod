@@ -160,78 +160,80 @@ main .top{
     margin-right: 10px;
 }
 
+.top .center-vector{
+    position: relative;
+}
+
+.top .center{
+    position: relative;
+    top: 70px;
+    z-index: 10;
+    border-radius: 6px;
+    box-shadow: 0 8px 30px -6px black;
+}
+
 
 .top .vector1{
     position: absolute;
     opacity: 0.56;
     width:1202.01px;
     height:901.94px;
-    top: 180px;
-    left: 318px;
-
+    /*top: 180px;
+    left: 318px; */
+    /* height: 810px; */
+    /* top: -324px;
+    left: 122px; */
+    top: -345px;
+    left: 214px;
 }
 
 .top .vector2{
     position: absolute;
-    width: 63.62px;
-    height: 37.41px;
-    left: 1216px;
-    top: 423px;
-    transform: rotate(4.5deg);
+    /* width: 63.62px; */
+    /* height: 37.41px; */
+    left: 1120px;
+    top: -97px;
+    transform: rotate(11.5deg);
 }
 
 .top .vector3{
     position: absolute;
     width: 24px;
     height: 24px;
-    left: 295px;
-    top: 510px;
+    left: 200px;
+    top: 43px;
 }
 
 .top .vector4{
     position: absolute;
     width: 25px;
     height: 25px;
-    left: 1070px;
-    top: 885px;
+    left: 1000px;
+    top: 400px;
 }
 
 .top .vector7{
     position: absolute;
-    width: 25px;
-    height: 25px;
-    left: -84px;
-    top: 773px;
+    left: -165px;
+    top: 278px;
 }
 
 .top .vector8{
     position: absolute;
     width: 49px;
     height: 7.46px;
-    left: 264px;
-    top: 789px;
+    left: 167px;
+    top: 319px;
 }
 
 .top .vector9{
     position: absolute;
     width: 49px;
     height: 7.46px;
-    left: 1055px;
-    top: 630px;
+    left: 1013px;
+    top: 191px;
 }
 
-.top .center{
-    position: relative;
-    top: 50px;
-    z-index: 10;
-    border-radius: 6px;
-}
-
-.top .center img{
-    width: 702px;
-    height: 491px;
-    box-shadow: 0 8px 25px -6px black;
-}
 /* home section end */
 
 
@@ -250,7 +252,7 @@ main .top{
     align-items: center;
     justify-content: space-between;
     gap: 29px;
-    margin-top: 81px;
+    margin-top: 124px;
 }
 
 .cards .card{
